@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>3L_Chapoh@PIRATES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome CDN -->
+
+    <style>
+        /* Additional styling for the video background */
+        .home-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .card-container {
+            margin-top: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 300px; /* Increase the width for a larger card */
+            height: 400px; /* Increase the height for a taller card */
+            border-radius: 15px;
+            padding: 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin: 20px;
+            background-position: center;
+            background-size: cover;
+            transition: transform 0.5s;
+            position: relative;
+        }
+
+        .card h5 {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+        }
+
+        .card:hover .additional-info {
+            display: block;
+            opacity: 1;
+        }
+
+        .additional-info {
+            display: none;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            transition: opacity 0.5s;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        .additional-info p {
+            margin: 5px 0;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 5px;
+            color: #fff;
+        }
+        
+     
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 0;
+            background-color: #1d1c1c5e;
+            z-index: 2;
+            /* Ensure navbar is above the video and content */
+            display: flex;
+            justify-content: center;
+            /* Center the content horizontally */
+            align-items: center;
+            /* Center the content vertically */
+        }
+
+        .navbar img {
+            width: 100x;
+            /* Adjust the logo size as needed */
+            cursor: pointer;
+            margin-left: -3vh;
+        
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .navbar ul li {
+            margin: 0 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .content {
+            width: 100%;
+            height: 93vh;
+            background-position: center;
+            background-size: cover;
+        
+        }
+
+        .navbar ul li::after {
+            content: "";
+            height: 3px;
+            width: 0;
+            background: #009688;
+            display: block;
+            margin-top: 5px;
+            transition: width 0.5s;
+        }
+
+        .contact-section {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
+
+        footer {
+            background-color: #000;
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            /* Set text color to white or any suitable color for better visibility */
+        }
+
+        footer a {
+            color: black;
+            /* Set the color to black or any desired color */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="./images/logo1-removebg-preview.png" alt="" class="logo">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="adventure.html">Adventure</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+
+    <section class="home-section">
+        <!-- Video background -->
+        <video autoplay loop muted playsinline>
+            <source src="images/vid1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
+        <!-- Banner content -->
+        <div class="content">
+            <div class="section-text">
+                <h1>Featured Projects</h1>
+                <p>Take a glimpse and Explore some of our recent projects and collaborations with artists.
+                    <br>Our projects showcase the diverse talents and creativity within the Misery Pirates community.
+                    <br>All these from collaborative efforts to individual masterpieces.
+                </p>
+            </div>
+        
+                <div class="card-container">
+                    <div class="card card1">
+                        <h5>MAJUNKY ft POLIGAMY:<br>
+                            "Papa Chajimahn"</h5>
+                            <div class="social-icons">
+                                <a href="https://www.youtube.com/watch?v=FaEycq60o1E" target="_blank" style="color: red;"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        <div class="additional-info">
+                            <p>Our latest project, a captivating music video produced by the talented team at Misery Pirates.<br>
+                                This video is the result of endless hours of creativity, hard work, and dedication.</p>              
+                                <a href="https://www.youtube.com/watch?v=FaEycq60o1E" target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card2">
+                        <h5>SEWERSYDAA MKADINALI:<br>
+                            "The Rise of a Legend"</h5>
+                            <div class="social-icons">
+                                <a href="https://www.youtube.com/watch?v=nY4YSI2g6mQ" target="_blank" style="color: red;"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        <div class="additional-info">
+                            <p>Step into the world of SEWERSYDAA Mkadinali with our exclusive documentary.
+                                Explore the journey, the hustle, and the incredible rise of a legend in the music scene. </p>              
+                                <a href="https://www.youtube.com/watch?v=nY4YSI2g6mQ" target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card3">
+                        <h5>Thetopboybox:<br>
+                            "Season 1 - Episode 1"</h5>
+                            <div class="social-icons">
+                                <a href="https://www.youtube.com/watch?v=JErgi5WFkQc&t=292s" target="_blank" style="color: red;"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        <div class="additional-info">
+                            <p>Welcome to [thetopboybox], where we embark on a journey through the depths of the human
+                                experience, shining a compassionate light on a topic that affects millions around the world - depression.</p>              
+                                <a href="https://www.youtube.com/watch?v=JErgi5WFkQc&t=292s" target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card4">
+                        <h5>Abdizo:<br>
+                            "Project JANKY"</h5>
+                            <div class="social-icons">
+                                <a href="https://www.youtube.com/watch?v=GIMiU4sS0cI" target="_blank" style="color: red;"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        <div class="additional-info">
+                            <p>Capturing the energy and excitement of anepic encore performance by the very talented Majanky</p>              
+                                <a href="https://www.youtube.com/watch?v=GIMiU4sS0cI" target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Additional content specific to the landing page can be added here -->
+    <footer>
+        <div class="row">
+
+            <div class="col">
+                <img src="images/logo1-removebg-preview.png" alt="logo" class="logo">
+                <p>Have questions, suggestions, or just want to say hello?</p>
+                <p>Don't hesitate to contact us.</p>
+                <p>We value your feedback and are always ready to connect with fellow music enthusiasts.</p>
+            </div>
+
+            <div class="col">
+                <h3>office <div class="underline"><span></span></div></h3>
+                <p>MISERY PIRATES,</p>
+                <p>Fedha,</p>
+                <p>Embakasi,</p>
+                <p>Nairobi-Kenya.</p>
+                <p class="email-id">codecrafterske@gmail.com</p>
+                <h4>+254 716 229 012</h4>
+            </div>
+
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="adventure.html">Adventure</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h3>Newsletter<div class="underline"><span></span></div></h3>
+                <form>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/@MiseryPirates" target="_blank" style="color: red;"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" style="color: #bc2a8d;"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/yourphonenumber" target="_blank" style="color: #25d366;"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com" target="_blank" style="color: #000;"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" style="color: #1877f2;"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                </div>
+
+
+            </div>
+
+        </div>
+        <hr>
+        <p>&copy; 2024 Code Crafters KE.</p>
+        <p>&copy; 2024 Misery Pirates Entertainment.</p>
+        <p>All Rights Reserved.</p>
+    </footer>
+
+
+    <!-- Back to Top Button -->
+
+
+    <!-- typed.js -->
+    <script>
+        // JavaScript code to handle the Next button and card transitions
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.card');
+            let currentIndex = 0;
+
+            // Function to show the next card
+            function showNextCard() {
+                cards[currentIndex].style.transform = 'translateX(-100%)';
+                currentIndex = (currentIndex + 1) % cards.length;
+                cards[currentIndex].style.transform = 'translateX(0)';
+            }
+
+            // Add click event listener to the Next button
+            const nextButton = document.getElementById('nextButton');
+            if (nextButton) {
+                nextButton.addEventListener('click', showNextCard);
+            }
+        });
+    </script>
+</body>
+
+</html>
